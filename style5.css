@@ -1,0 +1,228 @@
+@font-face {
+  font-family: 'GT-Walsheim-Black';
+  src: url("GT-Walsheim-Black.otf");
+  /* IE9 Compat Modes */
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+.font-gt-walsheim-black {
+  font-family: 'GT-Walsheim-Black';
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'GT-Walsheim-Black'!important;
+}
+h1,p,text,.timeslot,body,main,td,tr,.container,.row,h2,.certifikat{
+  font-family: 'GT-Walsheim-Black'!important;
+}
+
+h2{
+  color: rgb(229,134,170);
+}
+
+
+
+h1{
+  color: rgba(20, 55, 84, 1);
+}
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border-style: solid;
+
+  
+}
+
+th, td {
+  text-align: left;
+  padding: 2px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+.container2{
+  border: 5px rgba(20, 55, 84, 1);
+  border-style: solid;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+
+
+
+.checkbox2 {
+  width: 25px!important;
+  height: 25px!important;
+  margin: auto!important;
+  display: flex;
+  border: 5px rgb(229,134,170)!important;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+
+
+.headerLine {
+    width: 100%;
+    height: 5px;
+    color: rgb(229,134,170);
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(229,134,170);
+    border-width:0;
+    margin-top: 0px;
+    margin-bottom:36px
+}
+
+.footerLine {
+    width: 100%;
+    height: 5px;
+    color: rgb(229,134,170);
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(229,134,170);
+    border-width:0;
+    margin-top: 36px;
+    margin-bottom:0px   
+}
+
+
+
+
+
+.btn-outline-primary-mychoice{
+    --bs-btn-color:rgb(229,134,170); 
+    --bs-btn-border-color:rgb(229,134,170);
+    --bs-btn-hover-color:#fff;
+    --bs-btn-hover-bg:rgb(229,134,170);
+    --bs-btn-hover-border-color:rgb(229,134,170);
+    --bs-btn-focus-shadow-rgb:13,110,253;
+    --bs-btn-active-color:#fff;
+    --bs-btn-active-bg:rgb(229,134,170);
+    --bs-btn-active-border-color:rgb(229,134,170);
+    --bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color:rgb(229,134,170);
+    --bs-btn-disabled-bg:transparent;
+    --bs-btn-disabled-border-color:rgb(229,134,170);
+    --bs-gradient:none
+}
+
+.sign-in{
+    width:30%;
+    text-align: center;
+}
+
+
+.login{
+    width: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color:rgba(20, 55, 84, 1);
+  }
+
+  
+
+  input[type=text], select {
+    width: 100%;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+
+  .container3{
+    border: rgba(20, 55, 84, 1);
+    border-style: solid;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+  input[type=password], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 50%;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px rgba(20, 55, 84, 1);
+    border-style: solid;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:40px;   
+    background-color: rgb(229,134,170,0.5); 
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(229,134,170);
+  }
+
+
+.container4{
+  border: rgba(20, 55, 84, 1);
+  border-radius: 4px;
+  border-style: solid;
+  float: center;
+
+}
+
+table{
+  border: rgba(20, 55, 84, 1);
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px!important;
+
+
+}
+th, td {
+  border:  solid rgba(20, 55, 84, 1);
+  border-radius: 10px;
+
+}

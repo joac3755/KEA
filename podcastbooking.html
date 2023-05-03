@@ -1,0 +1,89 @@
+{% extends "base.html" %} 
+{% block title %}
+{% endblock %} 
+{% block content %}
+<main>
+
+    <div class="container">
+        <div class="row">
+            <div class="column" align="center">
+                <h2 style="text-align: center;">Bookingoversigt</h2>
+                <br>
+                <div align="center">
+                    <div class="container4">
+                        <table id="myTable">
+                            <tr>
+                                <td>  Tid  </td>
+                                <td>  Bookingstatus </td>
+                                <td>  Booktid  </td>
+                            </tr>
+                            {%for i in range(0,numberOfTimeslots)%}
+                            <tr>
+                                <form action="" method="post" align ="center" style="text-align: center;">
+                                <td><input class= "timeslot" type="text" name ="timeslot" value="Klokken {{timeslots[i]}}" readonly></td>
+                                <td> <input class= "timeslot" type="text" name ="timeslot" value="{{bookingstatus[i]}}" readonly></td>
+                                <td>
+                                    {% if bookingstatus[i]=="Ledig"%}
+                                    <input class="checkbox2" type="checkbox" name="checkbox" value="{{timeslots[i]}}" />
+                                    {% endif %}
+                                </td>
+                               
+                                
+                    
+                            </tr>
+                            {%endfor%}
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="column" align="center">
+                
+
+                <h2 align="center"> Bookinginformationer </h2>
+                <br>
+                <div class="container2">
+                    
+                    <div class="container" align="center" style="vertical-align: middle;">
+                        <br>
+                        <div class="container3">
+                          <input type="text" style="height: 10%;" placeholder="Email" name="Email" value="{{
+                            request.form.Email }}" required>
+                        </div>
+                        <br>
+                        {% if error %}
+                            <input style="text-align: center" class="timeslot" type="text" name ="timeslot" value="{{error}}" readonly>
+                        {% endif %}
+                        <br>
+                        <br>
+                        <input align ="center" class="certifikat" type="submit" style="width:50%; height:100px" value="Book" />
+                    </div>
+                    
+                    <br>
+                    <br>
+                
+                
+                </div>
+
+                
+                
+            </div>
+        </form>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+
+</main> 
+{% endblock %}
+
+
+
+
+
