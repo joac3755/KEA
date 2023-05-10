@@ -69,7 +69,7 @@ def sendhtmlemail(receiver, subject, msg):
     smtp_server = "smtp.gmail.com"
     sender_email = "KEAbeitS22@gmail.com"  # Enter your address
     receiver_email = receiver #"KEAbeitS22@gmail.com"  # Enter receiver address
-    password = "iljpbfrzdhlcmvwu"
+    password = "XXXXXXXXXXXXXXXXXXXXXXXX"
 
 
 
